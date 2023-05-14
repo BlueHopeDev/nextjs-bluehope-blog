@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import {
     RiSunLine,
-    RiTimerLine,
+    RiMacbookLine,
     RiMoonLine,
 } from 'react-icons/ri'
 
@@ -42,7 +42,7 @@ const ThemeSelector = () => {
             <input id="0" name="mode" type="radio" value={'light'} checked={theme === 'light'} onChange={(e) => modeSwitcher(e.currentTarget.value)} className="[&:checked~span]:translate-x-[-43px]"/>
             <label htmlFor="0"><RiSunLine/></label>
             <input id="1" name="mode" type="radio" value={'system'} checked={theme === 'system'} onChange={(e) => modeSwitcher(e.currentTarget.value)} className="[&:checked~span]:translate-x-[0]"/>
-            <label htmlFor="1"><RiTimerLine/></label>
+            <label htmlFor="1"><RiMacbookLine/></label>
             <input id="2" name="mode" type="radio" value={'dark'} checked={theme === 'dark'} onChange={(e) => modeSwitcher(e.currentTarget.value)} className="[&:checked~span]:translate-x-[43px]"/>
             <label htmlFor="2"><RiMoonLine/></label>
             <span className="flex absolute bg-foreground/10 h-[24px] w-[38px] z-[1] rounded-sm transition duration-300 ease-in-out"></span>
