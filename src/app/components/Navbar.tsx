@@ -20,8 +20,8 @@ const Navbar = async ({}) => {
   
     return (
         <header className='flex flex-row justify-center fixed top-0 h-[64px] w-full bg-header/20 dark:bg-header/10 backdrop-blur-sm z-[9999]'>
-            <nav className='flex flex-row h-[100] w-full max-w-screen-lg'>
-                <div className='flex items-center h-[100] w-[64px]'>
+            <nav className='flex flex-row h-[100] px-[20px] w-full max-w-screen-lg'>
+                <div className='flex items-center h-[100] min-w-[64px] w-[64px]'>
                     <Image
                         src={bluehopeWideText}
                         alt='BLUEHOPE'
