@@ -34,7 +34,6 @@ const ThemeSelector = () => {
                 setTheme(mode)
                 break;
         }
-        console.log(theme)
     }
 
     return (

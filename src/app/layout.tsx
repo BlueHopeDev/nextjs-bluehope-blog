@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { Ubuntu_Mono } from 'next/font/google'
 import Providers from './components/Providers'
 import { cn } from '@/src/app/lib/utils'
+import MobileMenu from './components/MobileMenu'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin-ext'] })
 

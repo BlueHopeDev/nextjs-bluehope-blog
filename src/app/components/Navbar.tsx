@@ -11,6 +11,7 @@ import {
 } from 'react-icons/ri'
 import Link from 'next/link'
 import ThemeSelector from './ThemeSelector'
+import MobileMenu from './MobileMenu'
 
 interface NavbarProps {}
 
@@ -36,7 +37,7 @@ const Navbar = async ({}) => {
                         <span className='text-foreground dark:text-foreground'>Cmd + K</span>
                     </div>
                 </div>
-                <div className='flex justify-end w-full'>
+                <div className='hidden sm:flex justify-end w-full'>
                     <ul className='flex flex-row h-full gap-[20px]'>
                         <li className='flex items-center h-full'>
                             <Link href={"/"}>
@@ -99,6 +100,7 @@ const Navbar = async ({}) => {
                         </li>
                     </ul>
                 </div>
+                <MobileMenu/>
             </nav>
         </header>
     )
