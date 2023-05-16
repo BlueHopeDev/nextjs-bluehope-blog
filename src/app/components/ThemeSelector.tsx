@@ -44,7 +44,7 @@ const ThemeSelector = () => {
             <label htmlFor="1"><RiMacbookLine/></label>
             <input id="2" name="mode" type="radio" value={'dark'} checked={theme === 'dark'} onChange={(e) => modeSwitcher(e.currentTarget.value)} className="[&:checked~span]:translate-x-[43px]"/>
             <label htmlFor="2"><RiMoonLine/></label>
-            <span className="flex absolute bg-foreground/10 h-[24px] w-[38px] z-[1] rounded-sm transition duration-300 ease-in-out"></span>
+            <span className="flex absolute bg-dark/10 dark:bg-light/10 h-[24px] w-[38px] z-[1] rounded-sm transition duration-300 ease-in-out"></span>
         </div>
     )
 }

@@ -10,14 +10,23 @@ module.exports = {
     extend: {
       transitionProperty: {
         width: 'width',
-        height: 'height'
+        height: 'height',
+        dropShadow: 'drop-shadow',
       },
       colors: {
+        glassDark: 'rgb(var(--tinted-black))',
+        glassLight: 'rgb(var(--tinted-white))',
+        dark: 'rgb(var(--tinted-black))',
+        light: 'rgb(var(--tinted-white))',
         header: 'rgb(var(--tinted-white))',
         foreground: 'rgb(var(--tinted-white))',
         background: 'rgb(var(--background))',
         backgroundDark: 'rgb(var(--background-dark))',
-      }
+      },
+      dropShadow: {
+        'lightCenter': '0 0 2px rgb(var(--tinted-black)/0.1)',
+        'darkCenter': '0 0 2px 2px rgb(var(--tinted-light))'
+      },
     },
     screens: {
       lg: '1200px',

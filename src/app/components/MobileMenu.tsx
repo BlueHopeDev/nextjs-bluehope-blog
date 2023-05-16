@@ -26,7 +26,6 @@ const MobileMenu = () => {
                 setShow('open')
                 break
         }
-        console.log(show)
     }
 
     return (

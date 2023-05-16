@@ -3,7 +3,6 @@ import Navbar from './components/Navbar'
 import { Ubuntu_Mono } from 'next/font/google'
 import Providers from './components/Providers'
 import { cn } from '@/src/app/lib/utils'
-import MobileMenu from './components/MobileMenu'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin-ext'] })
 
@@ -19,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={ubuntuMono.className}>
-      <body className={cn('bg-background dark:bg-backgroundDark transition duration-300 ease-in-out')}>
+      <body className={'bg-light/80 dark:bg-dark/80 transition duration-300 ease-in-out'}>
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Navbar/>
