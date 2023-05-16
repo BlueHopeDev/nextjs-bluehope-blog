@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className='mt-[64px]'>
+    <main>
       Undefined
     </main>
   )

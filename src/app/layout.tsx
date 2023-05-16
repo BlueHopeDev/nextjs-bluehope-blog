@@ -22,7 +22,9 @@ export default function RootLayout({
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Navbar/>
+          <div className='mt-[64px]'>
           {children}
+          </div>
         </Providers>
       </body>
     </html>
