@@ -1,8 +1,5 @@
-import Image from 'next/image'
 import { getServerSession } from 'next-auth'
-import bluehopeWideText from '../../../public/bluehope-wide-text.svg'
 import {
-    RiSearch2Line,
     RiHomeLine,
     RiApps2Line,
     RiArrowRightSLine,
@@ -13,6 +10,7 @@ import Link from 'next/link'
 import ThemeSelector from './ThemeSelector'
 import MobileMenu from './MobileMenu'
 import SearchBar from './SearchBar'
+import Brand from './Brand'
 
 interface NavbarProps {}
 
@@ -24,13 +22,7 @@ const Navbar = async ({}) => {
         <header className='flex flex-row justify-center fixed top-0 h-[64px] w-full z-[5001] transition-all duration-300 ease-in-out'>
             <nav className='flex flex-row h-[100] px-[20px] w-full max-w-screen-lg'>
                 <div className='flex items-center h-[100] min-w-[64px] w-[64px]'>
-                    <Image
-                        src={bluehopeWideText}
-                        alt='BLUEHOPE'
-                        style={{
-                            objectFit: 'contain'
-                        }}
-                    />
+                    <Brand/>
                 </div>
                 <div className='block h-full w-max p-[16px]'>
                     <SearchBar/>
