@@ -12,6 +12,7 @@ import {
 import Link from 'next/link'
 import ThemeSelector from './ThemeSelector'
 import MobileMenu from './MobileMenu'
+import SearchBar from './SearchBar'
 
 interface NavbarProps {}
 
@@ -20,7 +21,7 @@ const Navbar = async ({}) => {
     const session = await getServerSession()
   
     return (
-        <header className='flex flex-row justify-center fixed top-0 h-[64px] w-full z-[9999] transition-all duration-300 ease-in-out'>
+        <header className='flex flex-row justify-center fixed top-0 h-[64px] w-full z-[5001] transition-all duration-300 ease-in-out'>
             <nav className='flex flex-row h-[100] px-[20px] w-full max-w-screen-lg'>
                 <div className='flex items-center h-[100] min-w-[64px] w-[64px]'>
                     <Image
@@ -32,10 +33,7 @@ const Navbar = async ({}) => {
                     />
                 </div>
                 <div className='block h-full w-max p-[16px]'>
-                    <div className='flex items-center h-full w-max bg-white/10 rounded-full gap-[10px] p-[10px] border-[1px] border-foreground/10 hover:border-foreground/20 select-none cursor-pointer drop-shadow-sm transition duration-300 ease-in-out'>
-                        <RiSearch2Line className='text-dark dark:text-light'/>
-                        <span className='text-dark dark:text-light'>Cmd + K</span>
-                    </div>
+                    <SearchBar/>
                 </div>
                 <div className='hidden sm:flex justify-end w-full'>
                     <ul className='flex flex-row h-full gap-[20px]'>

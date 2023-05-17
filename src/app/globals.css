@@ -6,6 +6,8 @@
   :root {
     --tinted-black: 27 29 30;
     --tinted-white: 214 219 220;
+    --dark: 44 49 56;
+    --light: 214 219 220;
     --background: 214 219 220;
     --background-dark: 27 29 30;
   }

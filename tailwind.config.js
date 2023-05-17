@@ -16,8 +16,8 @@ module.exports = {
       colors: {
         glassDark: 'rgb(var(--tinted-black))',
         glassLight: 'rgb(var(--tinted-white))',
-        dark: 'rgb(var(--tinted-black))',
-        light: 'rgb(var(--tinted-white))',
+        light: 'rgb(var(--light))',
+        dark: 'rgb(var(--dark))',
         header: 'rgb(var(--tinted-white))',
         foreground: 'rgb(var(--tinted-white))',
         background: 'rgb(var(--background))',
